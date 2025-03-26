@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genel Kültür Soruları</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Genel Kültür Testi</h1>
+        <div id="welcome-screen">
+            <label for="username">Adınızı Girin:</label>
+            <input type="text" id="username" placeholder="Adınız">
+            <button onclick="startQuiz()">Devam</button>
+        </div>
+        <div id="quiz-screen" style="display:none;">
+            <p id="question"></p>
+            <div id="options"></div>
+            <button id="next-btn" style="display:none;" onclick="nextQuestion()">Devam etmek ister misiniz?</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
